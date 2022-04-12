@@ -1,0 +1,54 @@
+<!doctype html>
+
+<html>
+	<head>
+		<title>Car Info</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="../css/bootstrap.min.css">
+		<script type="text/javascript" src="../js/image_reload.js"></script>
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="row">
+				<h1 class="display-1 text-center">Car Info Page</h1>
+			</div>
+
+			<div class="row mt-3">
+
+				<div class="col-md-6 text-center">
+					<!-- Camera raw -->
+						<img class="img-responsive" src="../img/raw_test.png" alt="Raw feed" onload='imageRefresh(this, 2000);'>
+					<b>Raw</b>
+				</div>
+
+				<div class="col-md-6 text-center">
+					<!-- Camera post-processing -->
+					<img class="img-responsive" src="../img/process_test.png" alt="Raw feed" onload='imageRefresh(this, 2000);'>
+					<b>Post Processing</b>
+				</div>
+
+			</div>
+
+			<div class="row mt-5">
+				<div class="col-md-12">
+					<!-- Text Car info, voltage, running, warnings, log messages -->
+					<div class= "car-info text-center">
+						<div style="display: inline-block; text-align: left;">
+							<p> Car Running?: No </p>
+							<p> Battery Voltage: N/A </p>
+							<p> Other option: Placeholder </p>
+							<p> Other option2: The Replaceholdering </p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</body>
+</html>
+
+
+
+
